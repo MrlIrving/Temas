@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENTEVIVA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .tema-escuro {
+        background-color: #353030;
+        color: white;
+    }
+
+    #trocar-tema {
+        font-size: 12px;
+        background-color: #70FF00;
+        border: 1px solid #52BA00;
+        border-radius: 5px;
+        padding: 7px;
+        box-shadow: 0px 6px 0px #52BA00;
+        transition: all .1s;
+    }
+
+    #trocar-tema:active {
+        box-shadow: 0px 2px 0px #52BA00;
+        position: relative;
+        top: 2px;
+    }
+</style>
+
+<body>
+    <section id="container">
+        <header>
+            <img class="logo" src="LENTEVIVA.png" alt="logo">
+            <h1>SERVIÇOS</h1>
+            <h1>BLOG</h1>
+            <h1>CONTATO</h1>
+            <button id="trocar-tema"> <b>Alterar Tema</b> </button>
+        </header>
+
+        <div class="inicio">
+            <img class="homem" src="HOMEM.png" alt="homem">
+            <h1 class="transformando">TRANSFORMANDO MOMENTOS EM MEMÓRIAS ETERNAS.</h1>
+        </div>
+    </section>
+
+    <section id="container2">
+        <h1 class="servicos">NOSSO<b>SERVIÇOS</b></h1>
+
+        <div class="bloco">
+            <div class="imagens">
+                <img class="propaganda" src="01.png" alt="">
+                <img class="propaganda" src="02.png" alt="">
+                <img class="propaganda" src="03.png" alt="">
+            </div>
+        </div>
+        <div class="svc">
+            <h1>ENSAIOSFOTOGRAFICOS</h1>
+            <h1>FOTOGRAFIAAMBIENTAL</h1>
+            <h1>ENSAIOPROFISSIONAL</h1>
+        </div>
+        <br>
+        <div class="bloco2">
+            <div class="imagens2">
+                <img class="propaganda" src="04.png" alt="">
+                <img class="propaganda" src="05.png" alt="">
+                <img class="propaganda" src="06.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="container3">
+        <br><br><br>
+        <h1 class="blog">NOSSO<b>BLOG</b></h1>
+        <div class="camera">
+            <img src="camera.png" alt="">
+        </div>
+    </section>
+
+    <div class="contato">
+        <div class="titulo">
+            CONTATE<B>-NOS</B>
+        </div>
+        <div class="sla">
+            <div class="separa">
+                <label for="">NOME:</label>
+                <input type="text">
+                <label for="">EMAIL:</label>
+                <input type="text">
+                <label for="">TELEFONE:</label>
+                <input type="text">
+                <label for="">MENSAGEM:</label>
+                <input type="text" id="mensagem">
+                <div class="botaoEnviar">
+                    <button class="enviar"> Enviar </button>
+                </div>
+            </div>
+            <img class="bolsa" src="BOLSA.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="menu">
+
+            <p>SERVIÇOS</p>
+            <p>BLOG</p>
+            <p>CONTATO</p>
+
+        </div>
+        <div class="logo">
+            LENTE<b>VIVA</b>
+        </div>
+    </footer>
+
+    <script>
+        const trocarTema = document.getElementById('trocar-tema');
+        const body = document.body;
+        trocarTema.addEventListener('click', () => {
+            body.classList.toggle('tema-escuro');
+        })
+    </script>
+</body>
+
+</html>
